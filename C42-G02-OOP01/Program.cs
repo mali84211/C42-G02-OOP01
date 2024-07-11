@@ -1,5 +1,25 @@
-﻿namespace C42_G02_OOP01
+﻿using System.Runtime.InteropServices;
+
+namespace C42_G02_OOP01
 {
+    public enum Days{ 
+    saturday,
+    sunday,
+    monday,
+    tuesday,
+    wednesday,  
+    thursday,
+    friday,
+
+    }
+    public enum gender : int
+    {
+        male , female
+    }
+    enum roles
+    {
+        Admin=10 , Editor=20 ,Viewer=30
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -55,6 +75,17 @@
             finally { Console.WriteLine("finally"); }
             Console.WriteLine("After try catch");
             #endregion
+            #region V2
+            Days day =Days.wednesday;
+
+            #endregion
         }
     }
+    //class Employee
+    //{
+    //   string name;
+    //      int  age;
+    //       double salary;
+    //       string gender;
+    //}
 }
