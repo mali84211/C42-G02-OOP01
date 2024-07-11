@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using Microsoft.VisualBasic.FileIO;
+using System.Runtime.InteropServices;
 
 namespace C42_G02_OOP01
 {
@@ -14,7 +15,7 @@ namespace C42_G02_OOP01
     }
     public enum gender : int
     {
-        male , female
+        male=1 , female=2
     }
     enum roles
     {
@@ -77,6 +78,22 @@ namespace C42_G02_OOP01
             #endregion
             #region V2
             Days day =Days.wednesday;
+
+
+            //gender g1 =gender.female;
+            //Console.WriteLine(g1);
+            //gender g2 =(gender)2;
+            //Console.WriteLine(g2);
+
+            string gender = "male";
+            // gender x=(gender) gender;
+
+            Enum.TryParse(typeof(gender), gender, out object result);
+            Console.WriteLine(result);
+
+            //gender x = new gender();
+            //Console.WriteLine(x);
+
 
             #endregion
         }
