@@ -1,41 +1,42 @@
 ﻿namespace C42_G02_OOP01
 {
+    public enum WeekDays
+    {
+        Saturday,
+        Sunday,
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday
+
+    }
+    public enum Season
+    {
+        Spring,
+        Summer,
+        Autumn,
+        Winter
+    }
+    public enum Permissions
+    {
+        None = 0,
+        Read = 1,
+        Write = 2,
+        Delete = 4,
+        Execute = 8
+    }
+    public enum Colors
+    {
+        Red,
+        Green,
+        Blue
+    }
     internal class Program
     {
         
         
-             public enum WeekDays
-        {
-            Saturday,
-            Sunday,
-            Monday,
-            Tuesday,
-            Wednesday,
-            Thursday,
-            Friday
-
-        }
-        public enum Season
-        {
-            Spring,
-            Summer,
-            Autumn,
-            Winter
-        }
-        public enum Permissions
-        {
-            None = 0,
-            Read = 1,
-            Write = 2,
-            Delete = 4,
-            Execute = 8
-        }
-        public enum Colors
-        {
-            Red,
-            Green,
-            Blue
-        }
+       
         static void Main(string[] args)
         {
             #region 1
